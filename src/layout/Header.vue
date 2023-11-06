@@ -46,12 +46,12 @@ export default {
   name: "App",
   data() {
     return {
-      appTitle: "Awesome App",
+      appTitle: "Mundo Matemático",
       sidebar: false,
       menuItems: [
-        { title: "Home", path: "/home", icon: "home" },
-        { title: "Sign Up", path: "/signup", icon: "face" },
-        { title: "Sign In", path: "/signin", icon: "lock_open" },
+        { title: "Início", path: "/home", icon: "home" },
+        { title: "Download", path: "/signup", icon: "face" },
+        { title: "Código Fonte", path: "/signin", icon: "lock_open" },
       ],
     };
   },
