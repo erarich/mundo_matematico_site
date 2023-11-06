@@ -1,56 +1,59 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img
-          src="https://bulma.io/images/bulma-logo.png"
-          width="112"
-          height="28"
-        />
-      </a>
+  <v-app>
+    <v-navigation-drawer v-model="sidebar" app>
+      <v-list>
+        <v-list-tile
+          v-for="item in menuItems"
+          :key="item.title"
+          :to="item.path"
+        >
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>{{ item.title }}</v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
 
-      <a
-        role="button"
-        class="navbar-burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+    <v-toolbar app>
+      <span class="hidden-sm-and-up">
+        <v-toolbar-side-icon @click="sidebar = !sidebar"> </v-toolbar-side-icon>
+      </span>
+      <v-toolbar-title>
+        <router-link to="/" tag="span" style="cursor: pointer">
+          {{ appTitle }}
+        </router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-xs-only">
+        <v-btn flat v-for="item in menuItems" :key="item.title" :to="item.path">
+          <v-icon left dark>{{ item.icon }}</v-icon>
+          {{ item.title }}
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item"> Home </a>
-
-        <a class="navbar-item"> Documentation </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link"> More </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item"> About </a>
-            <a class="navbar-item"> Jobs </a>
-            <a class="navbar-item"> Contact </a>
-            <hr class="navbar-divider" />
-            <a class="navbar-item"> Report an issue </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light"> Log in </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
+
+<script>
+//import HelloWorld from "./components/HelloWorld";
+
+export default {
+  name: "App",
+  data() {
+    return {
+      appTitle: "Awesome App",
+      sidebar: false,
+      menuItems: [
+        { title: "Home", path: "/home", icon: "home" },
+        { title: "Sign Up", path: "/signup", icon: "face" },
+        { title: "Sign In", path: "/signin", icon: "lock_open" },
+      ],
+    };
+  },
+};
+</script>
