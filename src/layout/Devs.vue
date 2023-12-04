@@ -14,7 +14,6 @@
         <img src="/src/assets/mateus.jpeg" alt="Dev 1" class="avatar" />
         <div class="info">
           <h2 style="font-weight: bold">Mateus Alves Araujo</h2>
-          <p class="github_logo">Descrição simples do Dev 1.</p>
           <a
             class="github_logo"
             href="https://github.com/MateusAlvez"
@@ -29,7 +28,6 @@
         <img src="/src/assets/erick.jpg" alt="Dev 2" class="avatar" />
         <div class="info">
           <h2 style="font-weight: bold">Érick Santos Marçal</h2>
-          <p class="github_logo">Descrição simples do Dev 2.</p>
           <a
             class="github_logo"
             href="https://github.com/erarich"
@@ -43,7 +41,6 @@
         <img src="/src/assets/wilque.jpeg" alt="Dev 2" class="avatar" />
         <div class="info">
           <h2 style="font-weight: bold">Wilque Muriel do Nascimento Coelho</h2>
-          <p class="github_logo">Descrição simples do Dev 2.</p>
           <a href="https://github.com/uiuqM" target="_blank">
             <img src="/src/assets/github-logo.png" alt="GitHub" />
           </a>
@@ -53,7 +50,6 @@
         <img src="/src/assets/sophia.jpeg" alt="Dev 2" class="avatar" />
         <div class="info">
           <h2 style="font-weight: bold">Sophia Menezes Pontes</h2>
-          <p class="github_logo">Descrição simples do Dev 2.</p>
           <a href="https://github.com/SophiaMenezes" target="_blank">
             <img src="/src/assets/github-logo.png" alt="GitHub" />
           </a>

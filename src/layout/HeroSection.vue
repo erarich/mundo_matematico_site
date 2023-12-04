@@ -10,16 +10,29 @@
     >
       <span style="color: white">MUNDO</span><br />MATEMÁTICO
     </h1>
-    <div class="game-download-container">
-      <a
-        href="https://github.com/erarich/projeto_de_sistemas/releases/tag/v3.0.0"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="game-download-button"
-      >
-        <span class="button-icon">🎮</span>
-        BAIXAR JOGO
-      </a>
+    <div style="display: flex; justify-content: center">
+      <div class="game-download-container">
+        <a
+          href="https://github.com/erarich/projeto_de_sistemas/releases/tag/v3.0.0"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="game-download-button"
+        >
+          <span class="button-icon">🎮</span>
+          BAIXAR JOGO
+        </a>
+      </div>
+      <div class="game-download-container">
+        <a
+          href="https://uiuqm.github.io/projeto_de_sistemas-test/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="game-download-button play"
+        >
+          <span class="button-icon">🎮</span>
+          JOGAR ONLINE
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -46,5 +59,14 @@
 
 .game-download-button:hover {
   background-color: #2980b9;
+}
+
+.play {
+  background-color: #db3466;
+  border: 2px solid #7e0a2c;
+}
+
+.play:hover {
+  background-color: #2b1f22;
 }
 </style>
