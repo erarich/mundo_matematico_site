@@ -103,4 +103,11 @@
 .github_logo {
   margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
 </style>

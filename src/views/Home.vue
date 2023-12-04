@@ -113,4 +113,16 @@ export default {
   border-radius: 10px;
   margin: 8px;
 }
+
+@media only screen and (max-width: 600px) {
+  .menu_buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .control-button {
+    margin: 8px 0;
+  }
+}
 </style>

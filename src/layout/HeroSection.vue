@@ -69,4 +69,11 @@
 .play:hover {
   background-color: #2b1f22;
 }
+
+@media only screen and (max-width: 600px) {
+  .game-download-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
 </style>
